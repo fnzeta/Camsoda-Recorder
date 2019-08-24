@@ -100,7 +100,6 @@ class RecordingThread(threading.Thread):
         self.config = config
         self.currently_recording_models[model_data['tpl'][1]] = model_data
         self.r = r
-        print(model_data)
         print(
             Fore.GREEN + "started recording {}".format(self.model_data['tpl'][2]) + Fore.RESET)
 
@@ -200,6 +199,6 @@ class should_record_model():
     def check(self, model):
         # print(model)
         if model['tpl'][1] in Wanted(self._settings).wanted_models:
-            if not hasattr(model, 'status') or model['status'] == 'online':
+            if not hasattr(model, 'status') or not model['status'] == 'private' or model['status'] == 'online':
                 return True
         return False
