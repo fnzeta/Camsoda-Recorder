@@ -3,6 +3,9 @@ Automatically checks every 20 seconds (set in config file) to see which camsoda 
 
 ---
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fnzeta/Camsoda-Recorder)
+
+
 ## Requirements
 
 1. Python 3 or Higher (https://www.python.org/downloads/)
